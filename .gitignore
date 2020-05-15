@@ -343,3 +343,5 @@ healthchecksdb
 /MyResumee.API/Pages
 /MyResumee.API/Properties
 /MyResumee.API/wwwroot
+/MyResumee.Repository/Configuration/UserConfiguration.cs
+/MyResumee.Model/Entitys/Courses.cs
