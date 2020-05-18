@@ -1,32 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { NavigationComponent } from './layout/navigation/navigation.component';
+import { IndexComponent } from './layout/index/index.component';
+import { AsideComponent } from './layout/aside/aside.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavMenuComponent,
-    HomeComponent,
-    CounterComponent,
-    FetchDataComponent
+    HeaderComponent,
+    FooterComponent,
+    NavigationComponent,
+    IndexComponent,
+    AsideComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
-    HttpClientModule,
-    FormsModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
-    ])
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

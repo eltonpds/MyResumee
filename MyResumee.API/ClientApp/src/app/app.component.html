@@ -1,6 +1,31 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Currículo</title>
+</head>
+<header>
+  <app-header></app-header>
+</header>
 <body>
-  <app-nav-menu></app-nav-menu>
   <div class="container">
-    <router-outlet></router-outlet>
+    <div class="row">
+      <div class="ml-auto">
+         <aside>
+            <app-aside></app-aside>
+         </aside>
+      </div>
+      <div class="col-md-8">
+          <section>
+            <app-index></app-index>
+          </section>
+      </div>
+    </div>
   </div>
 </body>
+<footer>
+  <app-footer>
+
+  </app-footer>
+</footer>
+</html>
