@@ -1,5 +1,5 @@
 {
   "ConnectionStrings": {
-    "MyResumeeDB": "server=localhost; uid=root;pwd;123456;database=MyResumeeDB"
+    "MyResumeeDB": "server=localhost; uid=root;pwd=123456;database=MyResumeeDB"
   }
 }

@@ -18,16 +18,17 @@ namespace MyResumee.API
             Configuration = builder.Build();
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            var connectionString = Configuration.GetConnectionString("MySqlConnection");
+
+            var connectionString = Configuration.GetConnectionString("MyResumeeDB");
             services.AddDbContext<MyResumeeContext>(
-                option => option.UseMySql(connectionString,
-                m => m.MigrationsAssembly("MyResumee.Repository")));
+                    option => option.UseMySql(connectionString,
+                        m => m.MigrationsAssembly("MyResumee.Repository")));
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
