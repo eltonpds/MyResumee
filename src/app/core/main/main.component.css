@@ -1,0 +1,27 @@
+div#home
+{
+  background-image: url("../../../assets/imagens/fundo2.jpg");
+  background-repeat: no-repeat;
+  background-position: 30% -10%;
+  background-size: cover;
+}
+
+article#tecnicas {
+  color: azure;
+  background-color: #222222;
+  padding-top: 50px;
+}
+
+article#tecnicas p {
+  color: black;
+}
+
+article#tecnicas img {
+  max-height: 350px;
+}
+
+article#sobre {
+  color: azure;
+  background-color: #222222;
+  padding-top: 50px;
+}
