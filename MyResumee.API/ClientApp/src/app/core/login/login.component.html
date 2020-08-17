@@ -1,0 +1,44 @@
+<!-- <div class="container">
+  <div class="row justify-content-center">
+    <h1 style="text-align: center; font-family: sans-serif;">Login</h1> <br/>
+  </div>
+
+  <div>
+    <div class="align-center" [hidden]="submitted">
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <div class="container">
+          <label for="email">E-mail</label>
+            <input
+              type="email"
+              class="form-control mb-2"
+              required
+              aria-describedby="emailHelp"
+              [(ngModel)]="login.email"
+              name="email"
+              #email="ngModel" />
+          <div [hidden]="email.valid || email.pristine" class="col-sm-3"
+            style="color: red; font-size: 12pt;">
+            Email é obrigatório
+          </div>
+
+          <label for="password">Senha</label>
+            <input
+              type="password"
+              class="form-control mb-2"
+              id="password"
+              [(ngModel)]="login.password"
+              name="password"
+              #password="ngModel"
+              required />
+            <div [hidden]="password.valid || password.pristine" class="col-sm-3 alert alert-danger">
+              Senha não pode ser vazia
+            </div>
+          <div class="row justify-content-end mr-auto">
+            <button type="submit" class="btn btn-info" [disabled]="!loginForm.form.valid" (click)="Login()">Entrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div> -->
