@@ -1,7 +1,3 @@
-import { PageNotFoundComponent } from './modules/notfound/pagenotfound.component';
-import { LoginComponent } from './core/login/login.component';
-import { CoursesComponent } from './modules/courses/courses.component';
-import { UserComponent } from './modules/user/user.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,10 +18,6 @@ import { MainComponent } from './core/main/main.component';
     NavigationComponent,
     IndexComponent,
     AsideComponent,
-    UserComponent,
-    CoursesComponent,
-    LoginComponent,
-    PageNotFoundComponent,
     MainComponent
   ],
   imports: [
