@@ -1,3 +1,5 @@
+import { PageNotFoundModule } from './modules/notfound/pagenotfound.module';
+import { PageNotFoundComponent } from './modules/notfound/pagenotfound.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +24,8 @@ import { MainComponent } from './core/main/main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PageNotFoundModule
   ],
   providers: [],
   bootstrap: [AppComponent]

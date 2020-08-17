@@ -1,3 +1,6 @@
+import { LoginModule } from './core/login/login.module';
+import { CoursesModule } from './modules/courses/courses.module';
+import { UserModule } from './modules/user/user.module';
 import { MainComponent } from './core/main/main.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -20,7 +23,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes),
+    UserModule,
+    CoursesModule,
+    LoginModule
+  ],
   exports: [RouterModule],
   providers: [LoginService]
 })
