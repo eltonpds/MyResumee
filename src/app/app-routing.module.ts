@@ -11,7 +11,6 @@ import { UserComponent } from './modules/user/user.component';
 import { LoginComponent } from './core/login/login.component';
 import { PageNotFoundComponent } from './modules/notfound/pagenotfound.component';
 import { LoginService } from './core/login/services/login.service';
-import { HttpClient } from '@angular/common/http';
 
 const routes: Routes = [
   { path: 'usuario', component: UserComponent },
