@@ -1,3 +1,7 @@
+import { PageNotFoundModule } from './modules/notfound/pagenotfound.module';
+import { CoursesModule } from './modules/courses/courses.module';
+import { LoginModule } from './core/login/login.module';
+import { UserModule } from './modules/user/user.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +26,11 @@ import { MainComponent } from './core/main/main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UserModule,
+    LoginModule,
+    CoursesModule,
+    PageNotFoundModule
   ],
   providers: [],
   bootstrap: [AppComponent]
