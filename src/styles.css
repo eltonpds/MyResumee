@@ -17,7 +17,7 @@ code {
 
 .notebook-image
 {
-  background-image: url("/assets/imagens/fundo2.jpg");
+  background-image: url('assets/imagens/fundo2.jpg');
   height: 720px;
   background-attachment: fixed;
   background-repeat: no-repeat;
