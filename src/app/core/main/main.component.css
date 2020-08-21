@@ -1,7 +1,10 @@
+article {
+  padding-top: 50px;
+}
+
 article#tecnicas {
   color: azure;
   background-color: #222222;
-  padding-top: 50px;
 }
 
 article#tecnicas p {
@@ -15,5 +18,4 @@ article#tecnicas img {
 article#sobre {
   color: azure;
   background-color: #222222;
-  padding-top: 50px;
 }

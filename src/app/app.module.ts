@@ -26,11 +26,11 @@ import { MainComponent } from './core/main/main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     UserModule,
     LoginModule,
     CoursesModule,
-    PageNotFoundModule
+    PageNotFoundModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
