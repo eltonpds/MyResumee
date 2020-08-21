@@ -1,81 +1,98 @@
-<div id="home">
-
-</div>
-
 <section  data-spy="scroll" data-target=".navbar" data-offset="10" id="mainNav">
+  <article id="carrocel">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="bd-example">
+          <div id="carouselWayOfWork" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselWayOfWork" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselWayOfWork" data-slide-to="1"></li>
+              <li data-target="#carouselWayOfWork" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="max-height: 212;" src="../../../assets/imagens/post-scrum.png" class="d-block" alt="...">
+                <!-- <div style="color: black;" class="carousel-caption d-none d-md-block">
+                  <h5>Entregas a cada 14 dias</h5>
+                <p>No final de cada sprint estaremos entregando algo novo para seu site</p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img style="max-height: 212;" src="../../../assets/imagens/ordem-de-pagamento.jpg" class="d-block" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                  <h5>Pague somente aquilo que você aprovar</h5>
+                  <p>Na reunião de entrega lhe mostraremos tudo o que fizemos, caso haja algo que você não aprove, não pague</p>
+                </div> -->
+              </div>
+              <div class="carousel-item">
+                <img style="max-height: 212;" src="../../../assets/imagens/Meu Site  Trello - Google Chrome.jpg" class="d-block" alt="...">
+                <!-- <div class="carousel-caption d-none d-md-block">
+                  <h5>Acompanhe nosso trabalho</h5>
+                  <p>Acompanhe o que estamos fazendo via reunião diária e Trello</p>
+                </div>
+              </div> -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselWayOfWork" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselWayOfWork" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
     <article id="tecnicas">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1>
-                        Técnicas de Desenvolvimento
-                        <br/>
-                    </h1>
-                    <br/>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="card text-justify">
-                        <img src="../../../assets/imagens/SPAvsMPA.png" id="spa" class="img-square img-responsive card-img-top"/>
-                        <div class="card-body">
-                            <h3 class="card-title text-center">SPA</h3>
-
-                            <p class="card-text">As aplicações de páginas simples (do inglês: Single Page Application) tendem a ser mais leves e rápidos pois as páginas ou componentes são carregados apenas quando o usuário as solicita onde o restante ta página permanece estático, economizando no consumo de banda do servidor.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="card text-justify">
-                        <img src="../../../assets/imagens/site-responsivo-design.jpg" alt="sites responsivos" class="img-square img-responsive card-img-top"/>
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Responsividade</h3>
-
-                            <p class="card-text">Um site responsivo consiste em uma página que pode se adaptar aos mais variados tamanhos de telas diferentes, tanto para telas com resolução 1080p quanto 240p.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="card text-justify">
-                        <img src="../../../assets/imagens/seo-negretti-full-marketing.webp" alt="seo" class="img-square img-responsive card-img-top"/>
-                        <div class="card-body">
-                            <h3 class="card-title text-center">SEO</h3>
-
-                            <p class="card-text">É um conjunto de estratégias elaboradas para potencializar e melhorar o posicionamento de um site nos resultados de busca fazendo com que o seu site fique mais próximo do topo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>
+              Técnicas de Desenvolvimento
+              <br/>
+            </h1>
+            <br/>
+          </div>
+          <div class="col-md-4">
+            <a name="search-engine" routerLink="/" routerLinkActive="active" class="btn btn-primary btn-block mt-3" role="button">SEO</a><br/>
+            <a name="responsivity" routerLink="/responsividade" routerLinkActive="active" class="btn btn-dark btn-block" role="button">Responsividade</a><br/>
+            <a name="spa" routerLink="/spa" routerLinkActive="active" class="btn btn-success btn-block" role="button">SPA</a><br/>
+          </div>
+          <div class="col-md-8">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
         </div><br/>
 </article>
 
 <article id="portfolio">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
                 <h1>
                     Portfólio
                     <br/>
-                    <small>
+                    <small class="mb-2">
                       Nossos últimos trabalhos
                     </small>
                 </h1>
             </div>
-        </div>
-
-        <div class="card text-center">
-        <img class="img-thumbnail" src="../../../assets/imagens/primeiro-trabalho.png" width="30%" alt="Imagem do website da Recond Embreagem"/>
-          <div class="card-img-top">
-              <div class="card-body">
-                  <h3 class="card-title">Recond Embreagem</h3>
-                  <p class="card-text"></p>
-                  <a target="_blank" href="https://eltonpds.github.io/recond-embreagem/" class="btn btn-primary">Visite a página</a>
+            <div class="card mb-3" style="width: 60rem;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./../../assets/imagens/primeiro-trabalho.png" class="card-img" alt="Imagem do website da Recond Embreagem">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Recond Embreagem</h5>
+                    <p class="card-text">Uma empresa especializada em recondicionamento de embreagem de caminhões, platôs e retíficas de voltante</p>
+                    <a style="float: right;" target="_blank" href="https://eltonpds.github.io/recond-embreagem/" class="btn btn-primary mt-3">Visite a página</a>
+                  </div>
+                </div>
               </div>
-          </div>
+            </div>
         </div>
     </div>
 </article>
@@ -111,8 +128,8 @@
         <div class="col-sm-6">
             <p>Entre em contato e responderemos dentro de 24 horas.</p>
             <p><i class="fas fa-map-marked-alt"></i> Recife, PE</p>
-            <p><span class="glyphicon glyphicon-phone"></span> (81) 9 8133 6252</p>
-            <p><span class="glyphicon glyphicon-envelope"></span>  eltonpereira505@gmail.com</p>
+            <p><span class="fas fa-phone"></span> (81) 9 8133 6252</p>
+            <p><span class="fas fa-envelope"></span>  eltonpereira505@gmail.com</p>
         </div>
 
         <div class="col-sm-6 slideanim">
@@ -131,7 +148,7 @@
 
             <div class="row">
                 <div class="col-sm-12 form-group">
-                    <button class="btn btn-default pull-right mb-2" type="submit">Enviar</button>
+                    <button class="btn btn-dark pull-right mb-2" style="float: right;" type="submit">Enviar</button>
                 </div>
             </div>
         </div>

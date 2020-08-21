@@ -1,15 +1,10 @@
-div#home
-{
-  background-image: url("../../../assets/imagens/fundo2.jpg");
-  background-repeat: no-repeat;
-  background-position: 30% -10%;
-  background-size: cover;
+article {
+  padding-top: 50px;
 }
 
 article#tecnicas {
   color: azure;
   background-color: #222222;
-  padding-top: 50px;
 }
 
 article#tecnicas p {
@@ -23,5 +18,4 @@ article#tecnicas img {
 article#sobre {
   color: azure;
   background-color: #222222;
-  padding-top: 50px;
 }
