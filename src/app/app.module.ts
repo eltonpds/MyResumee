@@ -1,3 +1,4 @@
+import { MainModule } from './core/main/main.module';
 import { PageNotFoundModule } from './modules/notfound/pagenotfound.module';
 import { PageNotFoundComponent } from './modules/notfound/pagenotfound.component';
 import { NgModule } from '@angular/core';
@@ -24,8 +25,17 @@ import { MainComponent } from './core/main/main.component';
   ],
   imports: [
     BrowserModule,
+<<<<<<< HEAD
     AppRoutingModule,
     PageNotFoundModule
+=======
+    UserModule,
+    LoginModule,
+    CoursesModule,
+    PageNotFoundModule,
+    MainModule,
+    AppRoutingModule
+>>>>>>> master
   ],
   providers: [],
   bootstrap: [AppComponent]
