@@ -1,3 +1,4 @@
+import { MainModule } from './core/main/main.module';
 import { PageNotFoundModule } from './modules/notfound/pagenotfound.module';
 import { CoursesModule } from './modules/courses/courses.module';
 import { LoginModule } from './core/login/login.module';
@@ -30,6 +31,7 @@ import { MainComponent } from './core/main/main.component';
     LoginModule,
     CoursesModule,
     PageNotFoundModule,
+    MainModule,
     AppRoutingModule
   ],
   providers: [],

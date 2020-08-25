@@ -8,7 +8,10 @@ import { SinglePageAppComponent } from './single-page-app/single-page-app.compon
 
 
 @NgModule({
-  declarations: [SearchEngineComponent, ResponsivityComponent, SinglePageAppComponent],
+  declarations: [
+    SearchEngineComponent,
+    ResponsivityComponent,
+    SinglePageAppComponent],
   imports: [
     CommonModule,
     MainRoutingModule
