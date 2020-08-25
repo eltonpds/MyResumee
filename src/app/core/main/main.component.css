@@ -1,3 +1,14 @@
+.notebook-image
+{
+  background-image: url("/assets/imagens/fundo2.jpg");
+  height: 720px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% -10%;
+  position: relative;
+}
+
 article {
   padding-top: 50px;
 }
