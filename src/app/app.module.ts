@@ -12,6 +12,9 @@ import { NavigationComponent } from './layout/navigation/navigation.component';
 import { IndexComponent } from './layout/index/index.component';
 import { AsideComponent } from './layout/aside/aside.component';
 import { MainComponent } from './core/main/main.component';
+import { UserModule } from './modules/user/user.module';
+import { LoginModule } from './core/login/login.module';
+import { CoursesModule } from './modules/courses/courses.module';
 
 @NgModule({
   declarations: [
@@ -25,17 +28,12 @@ import { MainComponent } from './core/main/main.component';
   ],
   imports: [
     BrowserModule,
-<<<<<<< HEAD
-    AppRoutingModule,
-    PageNotFoundModule
-=======
     UserModule,
     LoginModule,
     CoursesModule,
     PageNotFoundModule,
     MainModule,
     AppRoutingModule
->>>>>>> master
   ],
   providers: [],
   bootstrap: [AppComponent]
